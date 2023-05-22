@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Diseño básico de un Sitio Web</title>
+    <link rel="icon" type="image/jpg" href="img/c.jpg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Diseño & Edición</h1>
+            <h3>Herramientas Potentes</h3>
+        </div>
+        <nav>
+            <a href="#" class="selected">Home</a>
+            <a href="#imagen">Imagen</a>
+            <a href="#video">Video</a>
+            <a href="#audio">Audio</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="fila">
+            <div class="izq">
+                <img src="img/logos.jpg" alt="logo">
+            </div>
+            <div class="der">
+                <h2>Crea imagenes y animaciones</h2>
+                <h2 class="destacado">en minutos</h2>
+                <p>El uso de herramientas de IA para la creación y animación de imágenes proporciona eficiencia, calidad
+                    y una mayor capacidad para la expresión artística.</p>
+                <div class="opciones">
+                    <span class="opcion">OpenToonz</span>
+                    <span class="opcion">ArtBreeder</span>
+                    <span class="opcion">Deep Dream</span>
+                    <span class="opcion">Runway ML</span>
+                </div>
+                <div class="contacto">
+                    <a href="https://www.youtube.com/watch?v=EdLYaT-E0Us" target="_blank">VER VIDEO</a>
+                    <div class="redes">
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-discord"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="imagen">
+        <div class="conteItemCarrusel">
+            <input type="radio" name="carousel" id="img1" checked>
+            <input type="radio" name="carousel" id="img2">
+            <input type="radio" name="carousel" id="img3">
+
+            <a href="#img1" class="arrow prev">&lt;</a>
+            <a href="#img3" class="arrow next">&gt;</a>
+
+            <div class="itemCarrusel">
+                <img src="/img/lotus.jpg" alt="Magic Lotus">
+            </div>
+            <div class="itemCarrusel">
+                <img src="/img/phonexgr.jpg" alt="Phonex Girl">
+            </div>
+            <div class="itemCarrusel">
+                <img src="/img/dragMagent.jpg" alt="Neon Dragon">
+            </div>
+        </div>
+
+    </section>
+    <section id="video">
+        <div class="videocontain">
+            <img src="/img/5284223.jpg" alt="Fodo de Neon">
+            <h1><strong>VIDEO<br>PROJECTS</strong></h1>
+        </div>
+        
+    </section>
+    <section id="audio">
+        <div class="audiocontain">
+            <img src="https://www.reshot.com/preview-assets/illustrations/8BEQHD75F3/dj-playing-music-8BEQHD75F3-w1600.jpg" alt="">
+            <h1>MUSIC<br>Production</h1>
+        </div>
+        
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-s-3">
+                    <a href="#"><i class="fa-solid fa-globe"></i></a>
+                </div>
+            </div>
+            <p> &copy; Design Academy</p>
+        </div>
+       
+    </footer>
+</body>
+
+</html>

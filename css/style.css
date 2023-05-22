@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background: linear-gradient(#371e5a, #0b0316);
+    color: #fff;
+    height: 100%;
+}
+
+header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+header .logo h1 {
+    letter-spacing: 5px;
+}
+
+header .logo h3 {
+    font-weight: normal;
+    letter-spacing: 10px;
+}
+
+header nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    margin: 0 20px;
+    padding-bottom: 10px;
+}
+
+.selected {
+    border-bottom: 3px solid #bf11ae;
+}
+
+header nav a:hover {
+    color: rgb(241, 22, 197);
+    text-decoration: underline;
+}
+
+section {
+    max-width: 1100px;
+    margin: auto;
+    border: 4px solid rgb(241, 22, 197);
+    border-radius: 5px;
+}
+
+#home .fila {
+    display: flex;
+    padding: 20px;
+}
+
+#home .fila .izq {
+    max-width: 500px;
+    display: flex;
+    justify-content: cemter;
+    align-items: center;
+}
+
+#home .fila .izq img {
+    width: 100%;
+}
+
+#home .fila .izq img:hover {
+    transform: scale(1.05);
+}
+
+#home .fila .der {
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#home .fila .der h2 {
+    font-size: 40px;
+}
+
+.destacado {
+    color: rgb(241, 22, 197);
+}
+
+#home .fila .der p {
+    margin: 40px 0;
+    font-size: 20px;
+    color: rgb(255, 114, 192);
+}
+
+#home .fila .der .opciones {
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+#home .fila .der .opciones .opcion {
+    border-bottom: 4px solid rgb(255, 114, 192);
+    padding-bottom: 6px;
+}
+
+#home .fila .der .contacto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 3px 10px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#home .fila .der .contacto a {
+    text-decoration: none;
+    color: #dcff2c;
+}
+
+#home .fila .der .contacto a:hover {
+    transform: scale(1.1);
+}
+
+#home .fila .der .contacto .redes a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 7px;
+    color: #fff;
+}
+
+#home .fila .der .contacto .redes a:hover {
+    color: rgb(255, 114, 192);
+}
+
+#imagen {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.conteItemCarrusel {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+input[name="carousel"] {
+    display: none;
+}
+
+input[name="carousel"]:checked+.itemCarrusel {
+    opacity: 1;
+}
+
+.itemCarrusel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+#video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.videocontain {
+    text-align: center;
+    position: relative;
+}
+
+.videocontain img {
+    
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.videocontain h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 114, 192);
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#audio {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.audiocontain {
+    text-align: center;
+    position: relative;
+}
+
+.audiocontain img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.audiocontain h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: none; 
+    color: rgb(155, 4, 112);
+    font-size: 50px;
+    font-weight: bold;
+    margin: 10px; /* Opcional: Ajustar el margen superior izquierdo */
+}
+
+footer{
+    background: #0b0316;
+    color: #dcff2c;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
