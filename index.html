@@ -12,81 +12,201 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <h1>Diseño & Edición</h1>
-            <h3>Herramientas Potentes</h3>
-        </div>
-        <nav>
-            <a href="#" class="selected">Home</a>
-            <a href="#imagen">Imagen</a>
-            <a href="#video">Video</a>
-            <a href="#audio">Audio</a>
-            <a href="#">Contacto</a>
+    <header class="hero">
+        <nav class="nav container" id="nav">
+            <h2 class="nav__logo">Diseño & Edición</h2>
+            <ul class="nav__links">
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#imagen" class="nav__link">Imagen</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#video" class="nav__link">Video</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#audio" class="nav__link">Audio</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contacto" class="nav__link">Contacto</a>
+                </li>
+            </ul>
+            <a href="#nav" class="nav__hamburguer">
+                <img src="./img/menu.svg" class="nav__icon">
+            </a>
+            <a href="#" class="nav__close">
+                <img src="./img/close.svg" class="nav__icon">
+            </a>
         </nav>
     </header>
     <section id="home">
         <div class="fila">
-            <div class="izq">
-                <img src="img/logos.jpg" alt="logo">
+            <div class="sup">
+                <img src="img/logos.jpg" alt="logos">
             </div>
-            <div class="der">
+            <div class="inf">
                 <h2>Crea imagenes y animaciones</h2>
-                <h2 class="destacado">en minutos</h2>
+                <h2 class="destacado">en minutos <a href="#"><i class="fa-regular fa-circle-down"></i></a></h2>
                 <p>El uso de herramientas de IA para la creación y animación de imágenes proporciona eficiencia, calidad
                     y una mayor capacidad para la expresión artística.</p>
+                <p>Este es un sitio de una Academia ficticia enfocada al Diseño Multimedial.Sin embargo todo la
+                    información es REAL y ACTUALIZADA.</p>
+                <p>Mi primer proyecto para la
+                    asignatura de "Desarrollo Web" utilizando HTML & CSS; pero para mejorar la experiencia del usuario, he incorporado dos pequeños scripts: el primero permite mutear y desmutear un video de fondo utilizando el botón que se encuentra en la sección "Video" y el segundo es un "alert" que se muestra al enviar un formulario de la seccion "Contacto".</p>
+                <div class="contacto">
+                    <a href="https://www.youtube.com/watch?v=EdLYaT-E0Us" target="_blank">VER VIDEO</a>
+                    <div class="redes">
+                        <a href="https://www.youtube.com/channel/UCk8LWXwUU3iu9NSj6bPn7zA" target="_blank"><i
+                                class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/crystina_gonzalez/#" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/cristina-gonzalez-9337b0233/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
                 <div class="opciones">
                     <span class="opcion">OpenToonz</span>
                     <span class="opcion">ArtBreeder</span>
                     <span class="opcion">Deep Dream</span>
                     <span class="opcion">Runway ML</span>
                 </div>
-                <div class="contacto">
-                    <a href="https://www.youtube.com/watch?v=EdLYaT-E0Us" target="_blank">VER VIDEO</a>
-                    <div class="redes">
-                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-discord"></i></a>
-                    </div>
-                </div>
+                <ul>
+                    <li><strong>OpenToonz:</strong> Software de animación 2D gratuito y de código abierto que usa
+                        “tweening” para simplificar la
+                        animación entre fotogramas. Utilizado por estudios de animación en todo el mundo.</li>
+                    <li><strong>ArtBreeder:</strong> Herramienta gratuita en línea que utiliza inteligencia artificial
+                        para generar imágenes y animaciones a partir de un conjunto de imágenes de entrada. Es utilizado
+                        por artistas y diseñadores para crear ilustraciones únicas.</li>
+                    <li><strong>Deep Dream:</strong> Técnica de procesamiento de imágenes utilizada en el aprendizaje
+                        profundo que utiliza redes
+                        neuronales para encontrar patrones y detalles interesantes en las imágenes.</li>
+                    <li><strong>Runway ML:</strong> Plataforma flexible en línea que permite crear, entrenar y probar
+                        modelos de aprendizaje automático; útil para generación de texto, procesamiento de imágenes y
+                        reconocimiento de voz.</li>
+                </ul>
             </div>
         </div>
     </section>
     <section id="imagen">
-        <div class="conteItemCarrusel">
-            <input type="radio" name="carousel" id="img1" checked>
-            <input type="radio" name="carousel" id="img2">
-            <input type="radio" name="carousel" id="img3">
-
-            <a href="#img1" class="arrow prev">&lt;</a>
-            <a href="#img3" class="arrow next">&gt;</a>
-
-            <div class="itemCarrusel">
-                <img src="/img/lotus.jpg" alt="Magic Lotus">
-            </div>
-            <div class="itemCarrusel">
-                <img src="/img/phonexgr.jpg" alt="Phonex Girl">
-            </div>
-            <div class="itemCarrusel">
-                <img src="/img/dragMagent.jpg" alt="Neon Dragon">
-            </div>
+        <h2>Slider automatico de imagenes creadas con AI</h2>
+        <div class="slider-frame">
+            <ul>
+                <li><img src="https://static.boredpanda.com/blog/wp-content/uploads/2021/04/Artist-gives-human-forms-to-anime-characters-through-artificial-intelligence-6078047e9b75f-png__700.jpg"
+                        alt="Magic"></li>
+                <li><img src="https://generated-assets-cdn.shutterstock.com/asset-generation-b5bc6e42-f688-47b0-8442-d118900bcd11/asset-generation-b5bc6e42-f688-47b0-8442-d118900bcd11-2-watermarked.jpg"
+                        alt="Portal"></li>
+                <li><img src="https://img.freepik.com/foto-gratis/imagen-inteligencia-artificial-dragones-fantasia_23-2150400884.jpg?w=740&t=st=1684861112~exp=1684861712~hmac=9e3b6f180051fbb644030c702d03d72385e952612a9bf197e48dce255c2a580b"
+                        alt="Dragon"></li>
+                <li><img src="https://cdn.openai.com/labs/images/A%20photo%20of%20a%20Samoyed%20dog%20with%20its%20tongue%20out%20hugging%20a%20white%20Siamese%20cat.webp?v=1"
+                        alt="Realistic"></li>
+            </ul>
         </div>
-
     </section>
     <section id="video">
         <div class="videocontain">
-            <img src="/img/5284223.jpg" alt="Fodo de Neon">
             <h1><strong>VIDEO<br>PROJECTS</strong></h1>
+            <video id="videoElement" src="video/aiTechno.mp4" autoplay loop></video>
+            <button id="muteButton" onclick="toggleMute()">Mutar</button>
         </div>
-        
     </section>
+    <script>
+        function toggleMute() {
+            var video = document.getElementById("videoElement");
+            video.muted = !video.muted;
+        }
+    </script>
     <section id="audio">
         <div class="audiocontain">
-            <img src="https://www.reshot.com/preview-assets/illustrations/8BEQHD75F3/dj-playing-music-8BEQHD75F3-w1600.jpg" alt="">
-            <h1>MUSIC<br>Production</h1>
+            <img src="https://www.reshot.com/preview-assets/illustrations/8BEQHD75F3/dj-playing-music-8BEQHD75F3-w1600.jpg"
+                alt="fondo">
+            <div class="text-container">
+                <h1>MUSIC<br>Production</h1>
+                <h2>Principales herramientas y plataformas que utilizan la IA para la creación de audio.<br>Tecnologías
+                    que
+                    están cambiando el panorama de la producción musical.</h2>
+            </div>
+            <div class="info">
+                <ul>
+                    <li><strong>Ableton Live </strong> es una herramienta que está utilizando redes neuronales para
+                        generar
+                        nuevos sonidos y melodías.</li>
+                    <li><strong>Pro Tools </strong> ofrece herramientas de procesamiento de señales de audio en tiempo
+                        real
+                        basadas en aprendizaje automático.</li>
+                    <li><strong>Magenta Studio </strong> es un conjunto de herramientas de código abierto desarrollado
+                        por
+                        Google que utiliza el aprendizaje automático para generar música y arte.Se integra con Ableton
+                        Live.
+                    </li>
+                    <li><strong>AIVA </strong> es una plataforma de composición musical basada en IA que permite a los
+                        usuarios crear piezas musicales originales en una variedad de estilos y géneros.</li>
+                    <li><strong>Amper Music </strong> ahora es parte de Shutterstock, una plataforma de creación de
+                        música
+                        basada en inteligencia artificial que permite a los usuarios generar música original en tiempo
+                        real.
+                    </li>
+                </ul>
+            </div>
+            <div class="icon">
+                <img src="https://e7.pngegg.com/pngimages/869/666/png-clipart-ableton-live-arkaos-music-sound-urinal-top-view-miscellaneous-logo.png"
+                    alt="LIVE">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/PT2019.png" alt="ProTools">
+                <img src="https://magenta.tensorflow.org/assets/magenta-logo-bottom-text.png" alt="MStudio">
+                <img src="https://pbs.twimg.com/profile_images/1027448065685446656/xHhkZILq_400x400.jpg" alt="">
+                <img src="https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2015/10/shutterstock-logo-square.png?w=360&h=360&crop=1"
+                    alt="">
+            </div>
         </div>
-        
     </section>
+    <section class="sitios">
+        <div class="sitio1">
+            <iframe src="https://magenta.tensorflow.org/studio/"></iframe>
+        </div>
+        <div class="sitio2">
+            <iframe src="https://www.avid.com/es/pro-tools/intro"></iframe>
+        </div>
+        <div class="sitio3">
+            <iframe src="https://www.shutterstock.com/es/music"></iframe>
+        </div>
+    </section>
+    <section id="contacto">
+        <h2>Formulario de Contacto</h2>
+        <form>
+            <div>
+                <label for="nombre">Nombre:<span class="required"></span></label>
+                <input type="text" id="nombre" name="nombre" minlength="2" maxlength="30" required>
+            </div>
+            <div>
+                <label for="apellido">Apellido:<span class="required"></span></label>
+                <input type="text" id="apellido" name="apellido" minlength="2" maxlength="30" required>
+            </div>
+            <div>
+                <label for="email">Email:<span class="required"></span></label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+            </div>
+            <div class="selector">
+                <label for="intereses">Intereses:<span class="required"></span></label><br>
+                <input id="imagen" type="checkbox" name="imagen" value="imagen">
+                <label for="imagen">Imagen</label>
+                <input id="video" type="checkbox" name="video" value="video">
+                <label for="video">Video</label>
+                <input id="audio" type="checkbox" name="audio" value="audio">
+                <label for="audio">Audio</label>
+            </div>
+            <button type="submit" onclick="showAlert()">Enviar</button>
+        </form>
+        <script>
+            function showAlert() {
+                alert("¡GRACIAS por probar mi sitio!.\nRECUERDA que es Fiction.\nContinuará mejorando");
+            }
+        </script>
+    </section>
+
     <footer>
         <div class="container">
             <div class="row">
@@ -96,7 +216,6 @@
             </div>
             <p> &copy; Design Academy</p>
         </div>
-       
     </footer>
 </body>
 
