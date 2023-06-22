@@ -1,8 +1,8 @@
 #Primer Sitio Web
 ##Descripción del Proyecto
 El proyecto "Primer Sitio Web" es un sitio web de carácter informativo real pero refiere a una Academia ficticia ,especializada en diseño y edición multimedia. 
-El sitio ha sido construido utilizando HTML y CSS (uso de metodología BEM), junto con dos scripts sencillos para agregar funcionalidades adicionales.
-Aunque el sitio está funcional, es importante mencionar que aún existen algunos errores y áreas de mejora que se deben abordar. Algunas de las áreas identificadas son la falta de implementación correcta de técnicas de diseño responsivo y la estructura de la arquitectura, donde los Grid Layouts y Flexbox no están completamente aplicados.
+El sitio ha sido construido utilizando HTML y CSS (uso de metodología BEM), junto con unos scripts sencillos para agregar funcionalidades adicionales.
+Aunque el sitio está funcional, es importante mencionar que aún existen algunos errores que se deben abordar. Algunos de ellos son la maquetación, optimización de rendimiento e implementaciones de seguridad.
 
 [SitioWeb](https://www.ldnagore.com.ar/is28usuario4/ "SitioWeb")
 
