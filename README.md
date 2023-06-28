@@ -22,9 +22,8 @@ Mejoras futuras
 
 Para mejorar la calidad y funcionalidad del sitio web, se tiene previsto realizar las siguientes mejoras en el futuro:
     1. Integración de SASS: Se planea utilizar SASS (Syntactically Awesome Style Sheets) como preprocesador CSS para facilitar la escritura y organización del código CSS.
-    2. Implementación de React: Se considera integrar React, una biblioteca de JavaScript de código abierto, para crear componentes reutilizables y gestionar de manera eficiente el estado de la aplicación.
-    3. Mejora del diseño responsivo: Se trabajará en mejorar la adaptabilidad del sitio a diferentes dispositivos y tamaños de pantalla, corrigiendo los errores existentes en la implementación actual de los Grid Layouts y Flexbox.
-    4. Corrección de errores y optimización: Se realizará una revisión exhaustiva del código para solucionar los errores identificados y optimizar el rendimiento del sitio web.
+    2. Mejora del diseño responsivo: Se trabajará en mejorar la adaptabilidad del sitio a diferentes dispositivos y tamaños de pantalla, corrigiendo los errores existentes en la implementación actual de los Grid Layouts y Flexbox.
+    3. Corrección de errores y optimización: Se realizará una revisión exhaustiva del código para solucionar los errores identificados y optimizar el rendimiento del sitio web.
 
 Contribuciones
 <p>Si estás interesado en contribuir al proyecto "Primer Sitio Web" con ideas, correcciones o nuevas funcionalidades, te invitamos a que envíes tus sugerencias a través de la red social: </p>
