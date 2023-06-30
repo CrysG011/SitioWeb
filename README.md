@@ -1,5 +1,5 @@
-#Primer Sitio Web
-##Descripción del Proyecto
+# Primer Sitio Web
+## Descripción del Proyecto
 El proyecto "Primer Sitio Web" es un sitio web de carácter informativo real pero refiere a una Academia ficticia ,especializada en diseño y edición multimedia. 
 El sitio ha sido construido utilizando HTML y CSS (uso de metodología BEM), junto con unos scripts sencillos para agregar funcionalidades adicionales.
 Aunque el sitio está funcional, es importante mencionar que aún existen algunos errores que se deben abordar. Algunos de ellos son la maquetación, optimización de rendimiento e implementaciones de seguridad.
@@ -9,14 +9,16 @@ Aunque el sitio está funcional, es importante mencionar que aún existen alguno
 Funcionalidades
 
 El sitio web "Primer Sitio Web" actualmente ofrece las siguientes funcionalidades:
-<ul>
-      <li>Presentación del sitio.</li>
-      <li>Información sobre herramientas de diseño con IA que aceleran la producción.</li>
-      <li>Slider de imagenes creadas con IA.</li>
-      <li>Sección para proyectos de video con IA.</li>
-      <li>Avances en plataformas y aplicaciones para edición de audio.</li>
-      <li>Formulario de contacto para solicitar más información sobre la sección de su interés.</li>
-</ul>
+
+Presentación del sitio.
+Información sobre herramientas de diseño con IA que aceleran la producción.
+
+Slider de imagenes creadas con IA.
+
+Sección para proyectos de video con IA.
+Avances en plataformas y aplicaciones para edición de audio.
+
+Formulario de contacto para solicitar más información sobre la sección de su interés.
 
 Mejoras futuras
 
