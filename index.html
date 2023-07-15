@@ -67,7 +67,7 @@
                                 class="fa-brands fa-youtube"></i></a>
                         <a href="https://www.instagram.com/crystina_gonzalez/#" target="_blank"><i
                                 class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/cristina-gonzalez-9337b0233/" target="_blank"><i
+                        <a href="https://www.linkedin.com/in/crystina-g-cristina-gonzalez-9337b0233/" target="_blank"><i
                                 class="fa-brands fa-linkedin"></i></a>
                     </div>
                 </div>
@@ -186,36 +186,8 @@
             </div>
 
         </div>
+        <a href="pages/music.html"><button class="show-btn">Haz CLICK<br>para ver algunos Sitios</button></a>
     </section>
-    <button class="show-btn">Haz CLICK<br>para ver algunos Sitios</button>
-    <section class="sitios">
-        <div class="sitio1" style="display: none;">
-            <iframe src="https://magenta.tensorflow.org/studio/" loading="lazy"></iframe>
-        </div>
-        <div class="sitio2" style="display: none;">
-            <iframe src="https://www.avid.com/es/pro-tools/intro" loading="lazy"></iframe>
-        </div>
-        <div class="sitio3" style="display: none;">
-            <iframe src="https://www.shutterstock.com/es/music" loading="lazy"></iframe>
-        </div>
-    </section>
-    <script>
-        const button = document.querySelector('.show-btn');
-        button.addEventListener('click', () => {
-            const sitios = document.querySelectorAll('.sitios > div');
-            sitios.forEach(sitio => {
-                const iframe = sitio.querySelector('iframe');
-                if (sitio.style.display === 'none') {
-                    sitio.style.display = 'block';
-                    iframe.src = iframe.getAttribute('src');
-                    button.textContent = 'Ocultar Sitios';
-                } else {
-                    sitio.style.display = 'none';
-                    button.textContent = 'Mostrar Sitios';
-                }
-            });
-        });
-    </script>
     <section id="contacto">
         <a href="#nav" class="nav__hamburguer">
             <img src="./img/menu.svg" class="nav__icon" title="HOME">
