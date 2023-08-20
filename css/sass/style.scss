@@ -11,14 +11,10 @@ html {
 $color-primary: rgb(241, 22, 197);
 $color-letra: #fff;
 
-
 body {
     background: #410b23;
-    /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #33001b, #0b0316);
-    /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #33001b, #0b0316);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-attachment: scroll;
     color: $color-letra;
     font-family: 'Belanosima', sans-serif;
@@ -145,7 +141,6 @@ section {
 }
 
 #home {
-    background: url("https://img2.wallspic.com/previews/4/4/7/2/5/152744/152744-pattern-colorfulness-line-black-darkness-x750.jpg");
     display: flex;
     overflow: hidden;
 }
@@ -156,6 +151,9 @@ section {
     align-items: center;
     padding: 5%;
     flex-wrap: wrap;
+    background-image: url("https://img.freepik.com/vector-gratis/fondo-modelos-geometricos-luces-neon_23-2148430315.jpg?w=740&t=st=1692571133~exp=1692571733~hmac=dc999160301c7e7be8f04712c27eeb53a95b401ab8d2d2d5b9422fc938962b10");
+    background-size: cover;
+    background-position: center;
 }
 
 #home .fila__sup {
@@ -203,7 +201,8 @@ section {
     font-family: 'Convergence', sans-serif;
     color: #ffe7f6;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 1.875rem;
 
     &::first-letter {
         font-size: 1.5rem;
@@ -822,7 +821,6 @@ button {
 }
 
 .footer {
-    background: $background-gradient;
     color: rgb(76, 9, 39);
     text-align: center;
     font-size: .75rem;
