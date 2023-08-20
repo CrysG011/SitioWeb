@@ -1,10 +1,10 @@
 # Primer Sitio Web
 ## Descripción del Proyecto
 El proyecto "Primer Sitio Web" es un sitio web de carácter informativo real pero refiere a una Academia ficticia ,especializada en diseño y edición multimedia. 
-El sitio ha sido construido utilizando HTML y CSS (uso de metodología BEM), junto con unos scripts sencillos para agregar funcionalidades adicionales.
-Aunque el sitio está funcional, es importante mencionar que aún existen algunos errores que se deben abordar. Algunos de ellos son la maquetación, optimización de rendimiento e implementaciones de seguridad.
+El sitio ha sido construido utilizando HTML y CSS (uso de metodología BEM), integración con Sass y unos scripts sencillos para agregar funcionalidades adicionales.
+Es importante mencionar que aún existen algunos errores que se deben abordar. Algunos de ellos son la maquetación, optimización de rendimiento e implementaciones de seguridad.
 
-[SitioWeb](https://www.ldnagore.com.ar/is28usuario4/ "SitioWeb")
+[SitioWeb](https://crysg011.github.io/SitioWeb/) 
 
 Funcionalidades
 
@@ -20,14 +20,7 @@ Avances en plataformas y aplicaciones para edición de audio.
 
 Formulario de contacto para solicitar más información sobre la sección de su interés.
 
-Mejoras futuras
-
-Para mejorar la calidad y funcionalidad del sitio web, se tiene previsto realizar las siguientes mejoras en el futuro:
-    1. Integración de SASS: Se planea utilizar SASS (Syntactically Awesome Style Sheets) como preprocesador CSS para facilitar la escritura y organización del código CSS.
-    2. Mejora del diseño responsivo: Se trabajará en mejorar la adaptabilidad del sitio a diferentes dispositivos y tamaños de pantalla, corrigiendo los errores existentes en la implementación actual de los Grid Layouts y Flexbox.
-    3. Corrección de errores y optimización: Se realizará una revisión exhaustiva del código para solucionar los errores identificados y optimizar el rendimiento del sitio web.
-
 Contribuciones
 <p>Si estás interesado en contribuir al proyecto "Primer Sitio Web" con ideas, correcciones o nuevas funcionalidades, te invitamos a que envíes tus sugerencias a través de la red social: </p>
 
-[Instagram](https://www.instagram.com/crystina_gonzalez/# "Instagram")
+[Linkedin](https://www.linkedin.com/in/crystina-g-cristina-gonzalez-9337b0233/)
