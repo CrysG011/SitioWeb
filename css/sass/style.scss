@@ -12,9 +12,7 @@ $color-primary: rgb(241, 22, 197);
 $color-letra: #fff;
 
 body {
-    background: #410b23;
-    background: -webkit-linear-gradient(to right, #33001b, #0b0316);
-    background: linear-gradient(to right, #33001b, #0b0316);
+    background: #0b0316;
     background-attachment: scroll;
     color: $color-letra;
     font-family: 'Belanosima', sans-serif;
@@ -135,17 +133,18 @@ body {
 }
 
 section {
+   
     border: .06rem solid $color-primary;
     border-radius: .5625rem;
     overflow: hidden;
 }
 
-#home {
+.home {
     display: flex;
     overflow: hidden;
 }
 
-#home .fila {
+.fila {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,38 +155,38 @@ section {
     background-position: center;
 }
 
-#home .fila__sup {
+.col1 {
     max-width: 13rem;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: .3rem;
-}
 
-#home .fila__sup img {
-    width: 100%;
-    height: 100%;
-    display: flex;
+    img {
+        width: 100%;
+        height: 100%;
+        display: flex;
 
-    &:hover {
-        transform: scale(1.05);
+        &:hover {
+            transform: scale(1.05);
+        }
     }
 }
 
-#home .fila__inf {
+.col2 {
     padding: 0 .9rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
 
-#home .fila__inf h2 {
-    font-size: 2.5rem;
-    text-align: center;
+    h2 {
+        font-size: 2.5rem;
+        text-align: center;
 
-    i {
-        color: #afab34;
+        i {
+            color: #afab34;
+        }
     }
 }
 
@@ -195,7 +194,7 @@ section {
     color: $color-primary;
 }
 
-#home .fila__inf p {
+.col2 p {
     margin: .3125rem 0;
     font-size: 1rem;
     font-family: 'Convergence', sans-serif;
@@ -209,7 +208,7 @@ section {
     }
 }
 
-#home .fila__inf .contacto {
+.col2__contacto {
     display: flex;
     justify-content: space-between;
     gap: 3rem;
@@ -221,40 +220,42 @@ section {
     border-radius: 1.875rem;
     font-size: 1rem;
     cursor: pointer;
-}
 
-#home .fila__inf .contacto a {
-    text-decoration: dotted;
-    color: #ffe7f6;
+    a {
+        text-decoration: dotted;
+        color: #ffe7f6;
 
-    &:hover {
-        transform: scale(1.3);
-        color: #afab34;
+        &:hover {
+            transform: scale(1.3);
+            color: #afab34;
+        }
+    }
+
+    .fa-brands {
+        text-decoration: none;
+        display: inline-block;
+        margin: 0 .4375rem;
+        color: $color-letra;
+        width: max-content;
+        height: max-content;
     }
 }
 
-#home .fila__inf .contacto__redes a {
-    text-decoration: none;
-    display: inline-block;
-    margin: 0 .4375rem;
-    color: $color-letra;
-    width: max-content;
-    height: max-content;
+.redes {
+    .fa-youtube:hover {
+        color: rgba(243, 41, 41, 0.887);
+    }
+
+    .fa-instagram:hover {
+        color: rgb(255, 114, 192);
+    }
+
+    .fa-linkedin:hover {
+        color: rgba(98, 98, 221, 0.833);
+    }
 }
 
-.redes .fa-youtube:hover {
-    color: rgba(243, 41, 41, 0.887);
-}
-
-.redes .fa-instagram:hover {
-    color: rgb(255, 114, 192);
-}
-
-.redes .fa-linkedin:hover {
-    color: rgba(98, 98, 221, 0.833);
-}
-
-#home .fila__inf .opciones {
+.col2__opciones {
     font-size: 1.8rem;
     font-weight: bold;
     display: flex;
@@ -273,7 +274,7 @@ section {
     }
 }
 
-#home .fila__inf ul {
+.col2__ul {
     list-style: none;
     margin: .3rem;
     display: flex;
@@ -297,16 +298,16 @@ section {
 }
 
 @media screen and (max-width: 768px) {
-    .fila__inf h2 {
+    .col2 h2 {
         font-size: 1.7rem;
     }
 
-    .fila__inf p {
+    .col2 p {
         font-size: .9rem;
         ;
     }
 
-    .fila__inf ul {
+    .col2__ul {
         flex-flow: column wrap;
         font-size: 1rem;
 
@@ -339,7 +340,7 @@ section {
     }
 }
 
-#imagen .slider-frame {
+.imagen__slider {
     width: 100%;
     height: auto;
     margin: .625rem auto 0;
@@ -412,10 +413,10 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: linear-gradient(rgb(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7));
+    background-color: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7));
 }
 
-.videocontain {
+.video__contain {
     text-align: center;
     position: relative;
     display: flex;
@@ -439,34 +440,34 @@ section {
     }
 }
 
-.video-wrapper {
+.video__wrapper {
+    position: relative;
+}
+
+.video__container {
     position: relative;
 
-    .video-container {
-        position: relative;
-
-        .video-subtitle {
-            position: absolute;
-            width: 100%;
-            bottom: .625rem;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: .3125rem .625rem;
-            color: $color-letra;
-            font-size: 1.1rem;
-        }
-
-        video {
-            display: block;
-            height: auto;
-            max-width: 100%;
-            border-radius: .625rem;
-        }
+    video {
+        display: block;
+        height: auto;
+        max-width: 100%;
+        border-radius: .625rem;
     }
 }
 
-#audio {
+.video-subtitle {
+    position: absolute;
+    width: 100%;
+    bottom: .625rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: .3125rem .625rem;
+    color: $color-letra;
+    font-size: 1.1rem;
+}
+
+.audio {
     position: relative;
     width: 100%;
     height: fit-content;
@@ -474,7 +475,7 @@ section {
     display: grid;
 }
 
-.audiocontain {
+.audio__contain {
     position: relative;
     width: 100%;
     display: grid;
@@ -512,15 +513,18 @@ section {
             width: 100%;
             height: fit-content;
             margin-top: .3rem;
+
             background: {
                 size: cover;
                 position: center;
                 attachment: fixed;
                 image: linear-gradient(rgba(11, 3, 22, 0.8), rgba(11, 3, 22, 0.9)), url("https://www.reshot.com/preview-assets/illustrations/8BEQHD75F3/dj-playing-music-8BEQHD75F3-w1600.jpg");
             }
+
             border-radius: .625rem;
             font-size: 1.3rem;
-            font-family: 'Convergence', sans-serif;
+            font-family: 'Convergence',
+            sans-serif;
             color: $color-letra;
             text-decoration: dashed;
             letter-spacing: .1rem;
@@ -640,11 +644,13 @@ section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: .625rem;
+
     border: {
         left: .625rem solid $color-primary;
         right: .625rem solid $color-primary;
         radius: .5625rem;
     }
+
     box-shadow: .125rem .125rem .3125rem var(--gray-color);
 
     .sitio1,
@@ -749,6 +755,7 @@ section {
         gap: 0.3rem;
         padding: 1rem;
     }
+
     .selector {
         display: grid;
         gap: 0.5rem;
@@ -759,6 +766,7 @@ section {
         }
     }
 }
+
 label {
     font-family: 'Convergence', sans-serif;
 }
@@ -808,11 +816,13 @@ button {
     cursor: pointer;
     width: fit-content;
     height: fit-content;
+
     font: {
         size: 1.0625rem;
         weight: bold;
         family: 'Belanosima', sans-serif;
     }
+
     transition: transform 0.3s ease;
 
     &:hover {

@@ -42,14 +42,14 @@
             </a>
         </nav>
     </header>
-    <section id="home">
+    <section class="home">
         <div class="fila">
-            <div class="fila__sup">
+            <div class="col1">
                 <img src="img/logos.jpg" title="Creado con BlueWillow" alt="logos">
             </div>
-            <div class="fila__inf">
+            <div class="col2">
                 <h2>Crea imagenes y animaciones</h2>
-                <h2 class="destacado">en minutos <a href="#"><i class="fa-regular fa-circle-down"></i></a></h2>
+                <h2 class="destacado">en minutos <i class="fa-regular fa-circle-down"></i></h2>
                 <p>El uso de herramientas de IA para la creación y animación de imágenes proporciona eficiencia, calidad
                     y una mayor capacidad para la expresión artística.</p>
                 <p>Este es un sitio de una Academia ficticia enfocada al Diseño Multimedial.Sin embargo toda la
@@ -59,9 +59,9 @@
                     he incorporado unos pequeños scripts: uno de ellos permite mutear y desmutear un video de fondo
                     utilizando el botón que se encuentra en la sección "Video", otro es un "alert" que se muestra
                     al enviar un formulario de la seccion "Contacto" y otros para optimizar el rendimiento.</p>
-                <div class="contacto">
+                <div class="col2__contacto">
                     <a href="https://www.youtube.com/watch?v=EdLYaT-E0Us" title="EDICION" target="_blank">VER VIDEO</a>
-                    <div class="contacto__redes">
+                    <div class="redes">
                         <a href="https://www.youtube.com/channel/UCk8LWXwUU3iu9NSj6bPn7zA" target="_blank"><i
                                 class="fa-brands fa-youtube"></i></a>
                         <a href="https://www.instagram.com/crystina_gonzalez/#" target="_blank"><i
@@ -70,13 +70,13 @@
                                 class="fa-brands fa-linkedin"></i></a>
                     </div>
                 </div>
-                <div class="opciones">
+                <div class="col2__opciones">
                     <span class="opcion">-OpenToonz-</span>
                     <span class="opcion">-ArtBreeder-</span>
                     <span class="opcion">-Deep Dream-</span>
                     <span class="opcion">-RunwayML-</span>
                 </div>
-                <ul>
+                <ul class="col2__ul">
                     <li><strong>OpenToonz:</strong> Software de animación 2D gratuito y de código abierto que usa
                         “tweening” para simplificar la
                         animación entre fotogramas. Utilizado por estudios de animación en todo el mundo.</li>
@@ -93,14 +93,14 @@
             </div>
         </div>
     </section>
-    <section id="imagen">
-        <div class="imagen">
+    <section class="imagen">
+        <div class="imagen__header">
             <a href="#nav" class="nav__hamburguer">
-                <img src="./img/menu.svg" class="nav__icon">
+                <img src="img/menu.svg" class="nav__icon">
             </a>
             <h2>Slider automatico de imagenes creadas con AI</h2>
         </div>
-        <div class="slider-frame">
+        <div class="imagen__slider">
             <ul>
                 <li><img src="https://static.boredpanda.com/blog/wp-content/uploads/2021/04/Artist-gives-human-forms-to-anime-characters-through-artificial-intelligence-6078047e9b75f-png__700.jpg"
                         loading="lazy" alt="Magic"></li>
@@ -114,15 +114,15 @@
         </div>
     </section>
     <section id="video">
-        <div class="videocontain">
+        <div class="video__contain">
             <a href="#nav" class="nav__hamburguer">
-                <img src="./img/menu.svg" class="nav__icon" title="HOME">
+                <img src="img/menu.svg" class="nav__icon" title="HOME">
             </a>
             <button id="muteButton" onclick="toggleMute()">Mutar</button>
             <h1><strong>VIDEO PROJECTS</strong></h1>
-            <div class="video-wrapper">
-                <div class="video-overlay"></div>
-                <div class="video-container">
+            <div class="video__wrapper">
+                <div class="video__overlay"></div>
+                <div class="video__container">
                     <div class="video-subtitle"><i class="fa-solid fa-volume-high"></i>_Música de fondo_<i
                             class="fa-solid fa-music"></i></div>
                     <video id="videoElement" autoplay loop muted playsinline loading="lazy">
@@ -133,17 +133,11 @@
 
         </div>
     </section>
-    <script>
-        function toggleMute() {
-            var video = document.getElementById("videoElement");
-            video.muted = !video.muted;
-        }
-    </script>
-    <section id="audio">
-        <div class="audiocontain">
+    <section class="audio">
+        <div class="audio__contain">
             <div class="text-container">
                 <a href="#nav" class="nav__hamburguer">
-                    <img src="./img/menu.svg" class="nav__icon" title="HOME">
+                    <img src="img/menu.svg" class="nav__icon" title="HOME">
                 </a>
                 <h1>MUSIC Production</h1>
                 <h2>Principales herramientas y plataformas que utilizan la IA para la creación de audio.<br>Tecnologías
@@ -239,6 +233,12 @@
             
         </div>
     </footer>
+    <script>
+        function toggleMute() {
+            var video = document.getElementById("videoElement");
+            video.muted = !video.muted;
+        }
+    </script>
 </body>
 
 </html>
