@@ -12,7 +12,8 @@ body {
   color: #fff;
   font-family: 'Belanosima', sans-serif;
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  overflow-x: hidden; }
 
 .hero {
   background-image: url("https://media.tenor.com/xkb7CVNJBVsAAAAC/colorful-art.gif");
@@ -243,21 +244,19 @@ section {
     font-size: 1rem; }
     .col2__ul li {
       flex-basis: 50%; } }
-#imagen {
+.imagen {
   width: 100%;
   height: 100%;
   margin: auto;
-  position: relative;
   overflow: hidden;
-  display: flex;
-  flex-flow: column wrap; }
+  padding: 1rem; }
 
-.imagen {
+.imagen__header {
   display: flex;
-  flex-flow: row wrap;
   justify-content: space-between;
+  align-items: center;
   margin: 1%; }
-  .imagen h2 {
+  .imagen__header h2 {
     text-align: center;
     font-size: 1.25rem;
     display: flex; }
@@ -265,59 +264,38 @@ section {
 .imagen__slider {
   width: 100%;
   height: auto;
-  margin: .625rem auto 0;
-  justify-content: center;
-  align-items: center;
-  animation: slide 8s infinite alternate ease-in-out; }
-  .imagen__slider ul {
-    display: flex;
-    padding: 0;
-    width: 400%;
-    align-items: center; }
-    .imagen__slider ul li {
-      list-style: none;
-      object-fit: contain;
-      width: 25%;
-      height: auto; }
-      .imagen__slider ul li img {
-        width: 50%;
-        height: auto;
-        object-fit: cover;
-        position: relative;
-        display: flex; }
+  display: flex;
+  justify-content: center; }
+  .imagen__slider img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5 ease;
+    -webkit-transition: .5 ease;
+    -moz-transition: .5 ease;
+    -ms-transition: .5 ease;
+    -o-transition: .5 ease; }
+  .imagen__slider img:hover {
+    width: 37.5rem;
+    cursor: crosshair;
+    opacity: 1;
+    filter: contrast(120%);
+    -webkit-filter: contrast(120%); }
 
-@keyframes slide {
-  0% {
-    margin-left: 0%; }
-  20% {
-    margin-left: 0%; }
-  25% {
-    margin-left: -100%; }
-  45% {
-    margin-left: -100%; }
-  50% {
-    margin-left: -200%; }
-  70% {
-    margin-left: -200%; }
-  75% {
-    margin-left: -300%; }
-  95% {
-    margin-left: 0%; } }
-#video {
-  position: relative;
+.video {
   width: 100%;
   height: 100%;
   overflow: hidden;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)); }
+  flex-direction: column;
+  background-color: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7));
+  padding: 1rem; }
 
 .video__contain {
   text-align: center;
   position: relative;
   display: flex;
-  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center; }
   .video__contain h1 {
@@ -333,7 +311,8 @@ section {
     font-family: 'Belanosima', sans-serif; }
 
 .video__wrapper {
-  position: relative; }
+  position: relative;
+  padding: 1rem; }
 
 .video__container {
   position: relative; }
@@ -359,10 +338,12 @@ section {
   width: 100%;
   height: fit-content;
   overflow: hidden;
-  display: grid; }
+  display: grid;
+  padding: 1rem; }
 
 .audio__contain {
   position: relative;
+  padding: 1rem;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
@@ -371,59 +352,56 @@ section {
   align-items: center;
   text-align: center;
   height: fit-content;
-  overflow: hidden;
-  background-image: linear-gradient(rgba(11, 3, 22, 0.8), rgba(11, 3, 22, 0.7)), url("https://www.reshot.com/preview-assets/illustrations/8BEQHD75F3/dj-playing-music-8BEQHD75F3-w1600.jpg");
-  background-size: cover;
-  background-attachment: scroll; }
-  .audio__contain .text-container {
-    position: relative;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between; }
-    .audio__contain .text-container h1 {
-      background-color: rgba(255, 162, 56, 0.3);
-      width: fit-content;
-      height: fit-content;
-      color: #fae4f3;
-      font-size: 1.5rem;
-      font-weight: bold;
-      padding: .3rem .5rem;
-      border-radius: 7%;
-      text-align: center; }
-    .audio__contain .text-container h2 {
-      padding: 1rem;
-      width: 100%;
-      height: fit-content;
-      margin-top: .3rem;
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      background-image: linear-gradient(rgba(11, 3, 22, 0.8), rgba(11, 3, 22, 0.9)), url("https://www.reshot.com/preview-assets/illustrations/8BEQHD75F3/dj-playing-music-8BEQHD75F3-w1600.jpg");
-      border-radius: .625rem;
-      font-size: 1.3rem;
-      font-family: 'Convergence', sans-serif;
-      color: #fff;
-      text-decoration: dashed;
-      letter-spacing: .1rem; }
-    .audio__contain .text-container a img {
-      background-color: #0b0316; }
-
-.info {
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  padding: 0 3%;
-  width: fit-content;
-  height: fit-content;
   background-image: linear-gradient(rgba(11, 3, 22, 0.8), rgba(11, 3, 22, 0.9)), url("https://www.reshot.com/preview-assets/illustrations/8BEQHD75F3/dj-playing-music-8BEQHD75F3-w1600.jpg");
   background-size: cover;
-  background-position: bottom; }
-  .info ul {
+  background-position: bottom;
+  background-attachment: scroll;
+  border-radius: .625rem;
+  font-family: 'Convergence', sans-serif;
+  color: #fff;
+  letter-spacing: .1rem; }
+
+.audio__header {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between; }
+  .audio__header img {
+    background-color: #0b0316; }
+  .audio__header h1 {
+    background-color: rgba(255, 162, 56, 0.3);
+    width: fit-content;
+    height: fit-content;
+    color: #fae4f3;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: .3rem .5rem;
+    border-radius: 7%;
+    text-align: center; }
+
+.audio__title {
+  padding: 1rem;
+  width: 100%;
+  height: fit-content;
+  margin-top: 1rem;
+  font-size: .9rem;
+  border-radius: .625rem;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(11, 3, 22, 0.8), rgba(11, 3, 22, 0.9)), url("https://www.reshot.com/preview-assets/illustrations/8BEQHD75F3/dj-playing-music-8BEQHD75F3-w1600.jpg"); }
+
+.audio__info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: fit-content;
+  height: fit-content; }
+  .audio__info ul {
     list-style: none;
-    margin-top: 2.2rem;
+    margin-top: 2rem;
     color: #fff; }
-    .info ul li {
+    .audio__info ul li {
       margin-bottom: 2rem;
       margin-left: 1.5rem;
       border-radius: 1rem;
@@ -432,102 +410,13 @@ section {
       font-family: 'Convergence', sans-serif;
       padding: .6rem; }
 
-.icon {
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  gap: 3.93rem;
-  flex-direction: column;
-  position: absolute;
-  top: 46%;
-  transform: translate(-50%, -50%);
-  width: 90%;
-  height: auto; }
-  .icon .icon__ul {
-    display: flex;
-    flex-flow: column wrap; }
-    .icon .icon__ul img {
-      width: 2.3rem;
-      height: auto; }
-
-@media screen and (max-width: 768px) {
-  .text-container {
-    align-items: flex-start; }
-    .text-container h1 {
-      font-size: 1.1rem; }
-    .text-container h2 {
-      font-size: .9rem;
-      background-color: rgba(255, 250, 253, 0.7); }
-
-  .info {
-    position: relative;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center; }
-    .info li {
-      font-size: .9rem; }
-      .info li img {
-        max-width: 1.6rem; } }
-@media screen and (max-width: 600px) {
-  .icon {
-    top: 46%; }
-    .icon .icon__ul {
-      gap: 2.2rem; } }
 .show-btn {
   margin: .3rem;
   padding: .9rem;
   max-width: 50%;
   font-family: 'Belanosima', sans-serif; }
 
-.sitios {
-  width: 100%;
-  height: 37.5rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: .625rem;
-  border-left: 0.625rem solid #f116c5;
-  border-right: 0.625rem solid #f116c5;
-  border-radius: .5625rem;
-  box-shadow: 0.125rem 0.125rem 0.3125rem var(--gray-color); }
-  .sitios .sitio1,
-  .sitios .sitio2,
-  .sitios .sitio3 {
-    width: 100%;
-    max-height: 600px;
-    display: grid;
-    background: url("https://wallpaperaccess.com/full/2488581.jpg");
-    position: relative;
-    justify-content: center; }
-  .sitios div iframe {
-    object-fit: cover;
-    height: 100%;
-    margin: 0; }
-
-@media screen and (max-width: 768px) {
-  .sitios {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(16.66vh, 1fr));
-    grid-gap: .625rem;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    box-sizing: border-box;
-    align-items: center;
-    justify-content: center;
-    border: 0; }
-    .sitios div {
-      padding: 0;
-      margin: 0;
-      height: 100%;
-      width: 100%; }
-    .sitios .sitio1 {
-      grid-row: 1; }
-    .sitios .sitio2 {
-      grid-row: 2; }
-    .sitios .sitio3 {
-      grid-row: 3; } }
-#contacto {
+.contacto {
   width: 100%;
   height: auto;
   margin: 0 auto;
@@ -539,10 +428,10 @@ section {
   align-items: center;
   justify-content: center;
   text-align: center; }
-  #contacto h2 {
+  .contacto h2 {
     margin: 1rem; }
 
-.form {
+.contacto__form {
   display: grid;
   gap: .3rem;
   max-width: 769px;
@@ -553,7 +442,7 @@ section {
   box-shadow: -15px -13px 29px -2px rgba(219, 103, 153, 0.68);
   -webkit-box-shadow: -15px -13px 29px -2px rgba(219, 103, 153, 0.68);
   -moz-box-shadow: -15px -13px 29px -2px rgba(219, 103, 153, 0.68); }
-  .form::after {
+  .contacto__form::after {
     content: "";
     position: absolute;
     top: -0.25rem;
@@ -563,19 +452,16 @@ section {
     z-index: -1;
     background-image: linear-gradient(to right, #ec56cb9d, #21184a80, rgba(255, 255, 255, 0.9));
     border-radius: .3125rem; }
-  .form div {
+  .contacto__form div {
     display: grid;
     gap: 0.3rem;
     padding: 1rem; }
-  .form .selector {
-    display: grid;
-    gap: 0.5rem;
-    align-items: center; }
-    .form .selector label {
-      margin-right: 0.5rem; }
-
-label {
-  font-family: 'Convergence', sans-serif; }
+  .contacto__form label {
+    font-family: 'Convergence', sans-serif; }
+  .contacto__form input {
+    background-color: rgba(255, 252, 255, 0.5);
+    padding: .3rem;
+    border-radius: .3125rem; }
 
 input[type="text"],
 input[type="email"],
@@ -584,22 +470,22 @@ button {
   width: 100%;
   padding: 0.5rem; }
 
-@media (min-width: 768px) {
-  form {
-    grid-template-columns: repeat(2, 1fr); }
-
-  .selector {
-    grid-column: 1 / -1; } }
-#contacto input {
-  background-color: rgba(255, 252, 255, 0.5);
-  padding: .3rem;
-  border-radius: .3125rem; }
+.selector {
+  display: grid;
+  gap: 0.5rem;
+  align-items: center; }
+  .selector label {
+    margin-right: 0.5rem; }
 
 span.required {
   color: #ed137b;
   margin-left: .3125rem; }
   span.required::before {
     content: "*"; }
+
+.enviar {
+  display: flex;
+  justify-content: center; }
 
 button {
   padding: .625rem;
@@ -623,8 +509,7 @@ button {
   font-size: .75rem;
   padding: .9375rem; }
 
-.col-s-3 i,
-p {
+.footer__text i, p {
   color: rgba(250, 249, 249, 0.68); }
 
 /*# sourceMappingURL=style.css.map */

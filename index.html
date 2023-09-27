@@ -10,9 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Convergence&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/jpg" href="img/c.jpg">
+    <link rel="icon" type="image/jpg" href="img/logo.png">
     <link rel="stylesheet" href="css/sass/style.css">
 </head>
+
 <body>
     <header class="hero">
         <nav class="nav container" id="nav">
@@ -42,7 +43,7 @@
             </a>
         </nav>
     </header>
-    <section class="home">
+    <section id="home" class="home">
         <div class="fila">
             <div class="col1">
                 <img src="img/logos.jpg" title="Creado con BlueWillow" alt="logos">
@@ -93,59 +94,55 @@
             </div>
         </div>
     </section>
-    <section class="imagen">
+    <section id="imagen" class="imagen">
         <div class="imagen__header">
             <a href="#nav" class="nav__hamburguer">
                 <img src="img/menu.svg" class="nav__icon">
             </a>
-            <h2>Slider automatico de imagenes creadas con AI</h2>
+            <h2>Slider de imagenes creadas con AI</h2>
         </div>
         <div class="imagen__slider">
-            <ul>
-                <li><img src="https://static.boredpanda.com/blog/wp-content/uploads/2021/04/Artist-gives-human-forms-to-anime-characters-through-artificial-intelligence-6078047e9b75f-png__700.jpg"
-                        loading="lazy" alt="Magic"></li>
-                <li><img src="https://generated-assets-cdn.shutterstock.com/asset-generation-b5bc6e42-f688-47b0-8442-d118900bcd11/asset-generation-b5bc6e42-f688-47b0-8442-d118900bcd11-2-watermarked.jpg"
-                        loading="lazy" alt="Portal"></li>
-                <li><img src="https://img.freepik.com/foto-gratis/imagen-inteligencia-artificial-dragones-fantasia_23-2150400884.jpg?w=740&t=st=1684861112~exp=1684861712~hmac=9e3b6f180051fbb644030c702d03d72385e952612a9bf197e48dce255c2a580b"
-                        loading="lazy" alt="Dragon"></li>
-                <li><img src="https://cdn.openai.com/labs/images/A%20photo%20of%20a%20Samoyed%20dog%20with%20its%20tongue%20out%20hugging%20a%20white%20Siamese%20cat.webp?v=1"
-                        loading="lazy" alt="Realistic"></li>
-            </ul>
+
+            <img src="./img/IAraven.jpg" loading="lazy" alt="Raven">
+            <img src="./img/IAmagia.jpg" loading="lazy" alt="Portal">
+            <img src="./img/IAdragon.png" loading="lazy" alt="Dragon">
+            <img src="./img/IAcatdog.png" loading="lazy" alt="Realistic">
+
         </div>
     </section>
-    <section id="video">
+    <section id="video" class="video">
         <div class="video__contain">
             <a href="#nav" class="nav__hamburguer">
                 <img src="img/menu.svg" class="nav__icon" title="HOME">
             </a>
             <button id="muteButton" onclick="toggleMute()">Mutar</button>
             <h1><strong>VIDEO PROJECTS</strong></h1>
-            <div class="video__wrapper">
-                <div class="video__overlay"></div>
-                <div class="video__container">
-                    <div class="video-subtitle"><i class="fa-solid fa-volume-high"></i>_Música de fondo_<i
-                            class="fa-solid fa-music"></i></div>
-                    <video id="videoElement" autoplay loop muted playsinline loading="lazy">
-                        <source src="video/aiTechno.mp4" type="video/mp4">
-                    </video>
-                </div>
+        </div>
+        <div class="video__wrapper">
+            <div class="video__overlay">Crea videos con IA</div>
+            <div class="video__container">
+                <div class="video-subtitle"><i class="fa-solid fa-volume-high"></i>_Música de fondo_<i
+                        class="fa-solid fa-music"></i></div>
+                <video id="videoElement" autoplay loop muted playsinline loading="lazy">
+                    <source src="video/aiTechno.mp4" type="video/mp4">
+                </video>
             </div>
-
         </div>
     </section>
-    <section class="audio">
+    <section id="audio" class="audio">
         <div class="audio__contain">
-            <div class="text-container">
+            <div class="audio__header">
                 <a href="#nav" class="nav__hamburguer">
                     <img src="img/menu.svg" class="nav__icon" title="HOME">
                 </a>
                 <h1>MUSIC Production</h1>
+            </div>
+            <div class="audio__title">
                 <h2>Principales herramientas y plataformas que utilizan la IA para la creación de audio.<br>Tecnologías
                     que
                     están cambiando el panorama de la producción musical.</h2>
-
             </div>
-            <div class="info">
+            <div class="audio__info">
                 <ul>
                     <li><strong>Ableton Live </strong> es una herramienta que está utilizando redes neuronales para
                         generar
@@ -166,27 +163,15 @@
                         real.
                     </li>
                 </ul>
-                <div class="icon">
-                    <ul class="icon__ul">
-                        <li><img src="https://e7.pngegg.com/pngimages/869/666/png-clipart-ableton-live-arkaos-music-sound-urinal-top-view-miscellaneous-logo.png" alt="Ableton"></li>
-                        <li><img src="https://upload.wikimedia.org/wikipedia/commons/4/49/PT2019.png" alt="ProTools"></li>
-                        <li><img src="https://magenta.tensorflow.org/assets/magenta-logo-bottom-text.png" alt="Magenta"></li>
-                        <li><img src="https://pbs.twimg.com/profile_images/1027448065685446656/xHhkZILq_400x400.jpg" alt="AIVA"></li>
-                        <li><img src="https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2015/10/shutterstock-logo-square.png?w=360&h=360&crop=1" alt="Amper"></li>
-                    </ul>
-                    
-                </div>
             </div>
-
         </div>
-        <a href="pages/music.html"><button class="show-btn">Haz CLICK<br>para ver algunos Sitios</button></a>
     </section>
-    <section id="contacto">
+    <section id="contacto" class="contacto">
         <a href="#nav" class="nav__hamburguer">
             <img src="./img/menu.svg" class="nav__icon" title="HOME">
         </a>
         <h2>Formulario de Contacto</h2>
-        <form class="form">
+        <form class="contacto__form">
             <div>
                 <label for="nombre">Nombre:<span class="required"></span></label>
                 <input type="text" id="nombre" name="nombre" minlength="2" maxlength="30" required>
@@ -212,31 +197,25 @@
                 <input id="audio" type="checkbox" name="audio" value="audio">
                 <label for="audio">Audio</label>
             </div>
-            <button type="submit" onclick="showAlert()">Enviar</button>
+            <div class="enviar">
+                <button type="submit" onclick="showAlert()">Enviar</button>
+            </div>
         </form>
-       
-        <script>
-            function showAlert() {
-                alert("¡GRACIAS por probar mi sitio!.\nRECUERDA que es Fiction.\nContinuará mejorando");
-            }
-        </script>
     </section>
 
     <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-s-3">
-                    <a href="#"><i class="fa-solid fa-globe"></i></a>
-                    <p> &copy; Design Academy</p>
-                </div>
-            </div>
-            
+        <div class="footer__text">
+            <a href="#"><i class="fa-solid fa-globe"></i></a>
+            <p> &copy; Design Academy</p>
         </div>
     </footer>
     <script>
         function toggleMute() {
             var video = document.getElementById("videoElement");
             video.muted = !video.muted;
+        }
+        function showAlert() {
+            alert("¡GRACIAS por probar mi sitio!.\nRECUERDA que es Fiction.\nContinuará mejorando");
         }
     </script>
 </body>

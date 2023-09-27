@@ -18,6 +18,7 @@ body {
     font-family: 'Belanosima', sans-serif;
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
 }
 
 .hero {
@@ -133,7 +134,6 @@ body {
 }
 
 section {
-   
     border: .06rem solid $color-primary;
     border-radius: .5625rem;
     overflow: hidden;
@@ -317,20 +317,18 @@ section {
     }
 }
 
-#imagen {
+.imagen {
     width: 100%;
     height: 100%;
     margin: auto;
-    position: relative;
     overflow: hidden;
-    display: flex;
-    flex-flow: column wrap;
+    padding: 1rem;
 }
 
-.imagen {
+.imagen__header {
     display: flex;
-    flex-flow: row wrap;
     justify-content: space-between;
+    align-items: center;
     margin: 1%;
 
     h2 {
@@ -343,84 +341,44 @@ section {
 .imagen__slider {
     width: 100%;
     height: auto;
-    margin: .625rem auto 0;
+    display: flex;
     justify-content: center;
-    align-items: center;
-    animation: slide 8s infinite alternate ease-in-out;
 
-    ul {
-        display: flex;
-        padding: 0;
-        width: 400%;
-        align-items: center;
+    img {
+        width: 0px;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: .8;
+        transition: .5 ease;
+        -webkit-transition: .5 ease;
+        -moz-transition: .5 ease;
+        -ms-transition: .5 ease;
+        -o-transition: .5 ease;
+    }
 
-        li {
-            list-style: none;
-            object-fit: contain;
-            width: 25%;
-            height: auto;
-
-            img {
-                width: 50%;
-                height: auto;
-                object-fit: cover;
-                position: relative;
-                display: flex;
-            }
-        }
+    img:hover {
+        width: 37.5rem;
+        cursor: crosshair;
+        opacity: 1;
+        filter: contrast(120%);
+        -webkit-filter: contrast(120%);
     }
 }
 
-@keyframes slide {
-    0% {
-        margin-left: 0%;
-    }
-
-    20% {
-        margin-left: 0%;
-    }
-
-    25% {
-        margin-left: -100%;
-    }
-
-    45% {
-        margin-left: -100%;
-    }
-
-    50% {
-        margin-left: -200%;
-    }
-
-    70% {
-        margin-left: -200%;
-    }
-
-    75% {
-        margin-left: -300%;
-    }
-
-    95% {
-        margin-left: 0%;
-    }
-}
-
-#video {
-    position: relative;
+.video {
     width: 100%;
     height: 100%;
     overflow: hidden;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     background-color: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7));
+    padding: 1rem;
 }
 
 .video__contain {
     text-align: center;
     position: relative;
     display: flex;
-    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
 
@@ -442,6 +400,7 @@ section {
 
 .video__wrapper {
     position: relative;
+    padding: 1rem;
 }
 
 .video__container {
@@ -473,10 +432,12 @@ section {
     height: fit-content;
     overflow: hidden;
     display: grid;
+    padding: 1rem;
 }
 
 .audio__contain {
     position: relative;
+    padding: 1rem;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
@@ -485,72 +446,65 @@ section {
     align-items: center;
     text-align: center;
     height: fit-content;
-    overflow: hidden;
-    background-image: linear-gradient(rgba(11, 3, 22, 0.8), rgba(11, 3, 22, 0.7)), url("https://www.reshot.com/preview-assets/illustrations/8BEQHD75F3/dj-playing-music-8BEQHD75F3-w1600.jpg");
-    background-size: cover;
-    background-attachment: scroll;
-
-    .text-container {
-        position: relative;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-
-        h1 {
-            background-color: rgba(255, 162, 56, 0.3);
-            width: fit-content;
-            height: fit-content;
-            color: rgb(250, 228, 243);
-            font-size: 1.5rem;
-            font-weight: bold;
-            padding: .3rem .5rem;
-            border-radius: 7%;
-            text-align: center;
-        }
-
-        h2 {
-            padding: 1rem;
-            width: 100%;
-            height: fit-content;
-            margin-top: .3rem;
-
-            background: {
-                size: cover;
-                position: center;
-                attachment: fixed;
-                image: linear-gradient(rgba(11, 3, 22, 0.8), rgba(11, 3, 22, 0.9)), url("https://www.reshot.com/preview-assets/illustrations/8BEQHD75F3/dj-playing-music-8BEQHD75F3-w1600.jpg");
-            }
-
-            border-radius: .625rem;
-            font-size: 1.3rem;
-            font-family: 'Convergence',
-            sans-serif;
-            color: $color-letra;
-            text-decoration: dashed;
-            letter-spacing: .1rem;
-        }
-
-        a img {
-            background-color: #0b0316;
-        }
-    }
-}
-
-.info {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    padding: 0 3%;
-    width: fit-content;
-    height: fit-content;
     background-image: linear-gradient(rgba(11, 3, 22, 0.8), rgba(11, 3, 22, 0.9)), url("https://www.reshot.com/preview-assets/illustrations/8BEQHD75F3/dj-playing-music-8BEQHD75F3-w1600.jpg");
     background-size: cover;
     background-position: bottom;
+    background-attachment: scroll;
+    border-radius: .625rem;
+    font-family: 'Convergence', sans-serif;
+    color: $color-letra;
+    letter-spacing: .1rem;
+}
+
+.audio__header {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    img {
+        background-color: #0b0316;
+    }
+
+    h1 {
+        background-color: rgba(255, 162, 56, 0.3);
+        width: fit-content;
+        height: fit-content;
+        color: rgb(250, 228, 243);
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: .3rem .5rem;
+        border-radius: 7%;
+        text-align: center;
+    }
+}
+
+.audio__title {
+    padding: 1rem;
+    width: 100%;
+    height: fit-content;
+    margin-top: 1rem;
+    font-size: .9rem;
+    border-radius: .625rem;
+
+    background: {
+        size: cover;
+        position: center;
+        attachment: fixed;
+        image: linear-gradient(rgba(11, 3, 22, 0.8), rgba(11, 3, 22, 0.9)), url("https://www.reshot.com/preview-assets/illustrations/8BEQHD75F3/dj-playing-music-8BEQHD75F3-w1600.jpg");
+    }
+}
+
+.audio__info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
 
     ul {
         list-style: none;
-        margin-top: 2.2rem;
+        margin-top: 2rem;
         color: $color-letra;
 
         li {
@@ -565,72 +519,6 @@ section {
     }
 }
 
-.icon {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    gap: 3.93rem;
-    flex-direction: column;
-    position: absolute;
-    top: 46%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    height: auto;
-
-    .icon__ul {
-        display: flex;
-        flex-flow: column wrap;
-
-        img {
-            width: 2.3rem;
-            height: auto;
-        }
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .text-container {
-        align-items: flex-start;
-
-        h1 {
-            font-size: 1.1rem;
-        }
-
-        h2 {
-            font-size: .9rem;
-            background-color: rgba(255, 250, 253, 0.7);
-        }
-
-    }
-
-    .info {
-        position: relative;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-
-        li {
-            font-size: .9rem;
-
-            img {
-                max-width: 1.6rem;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .icon {
-        top: 46%;
-
-        .icon__ul {
-            gap: 2.2rem;
-            ;
-        }
-    }
-}
-
 .show-btn {
     margin: .3rem;
     padding: .9rem;
@@ -638,74 +526,7 @@ section {
     font-family: 'Belanosima', sans-serif;
 }
 
-.sitios {
-    width: 100%;
-    height: 37.5rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: .625rem;
-
-    border: {
-        left: .625rem solid $color-primary;
-        right: .625rem solid $color-primary;
-        radius: .5625rem;
-    }
-
-    box-shadow: .125rem .125rem .3125rem var(--gray-color);
-
-    .sitio1,
-    .sitio2,
-    .sitio3 {
-        width: 100%;
-        max-height: 600px;
-        display: grid;
-        background: url("https://wallpaperaccess.com/full/2488581.jpg");
-        position: relative;
-        justify-content: center;
-    }
-
-    div iframe {
-        object-fit: cover;
-        height: 100%;
-        margin: 0;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .sitios {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(16.66vh, 1fr));
-        grid-gap: .625rem;
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        box-sizing: border-box;
-        align-items: center;
-        justify-content: center;
-        border: 0;
-
-        div {
-            padding: 0;
-            margin: 0;
-            height: 100%;
-            width: 100%;
-        }
-
-        .sitio1 {
-            grid-row: 1;
-        }
-
-        .sitio2 {
-            grid-row: 2;
-        }
-
-        .sitio3 {
-            grid-row: 3;
-        }
-    }
-}
-
-#contacto {
+.contacto {
     width: 100%;
     height: auto;
     margin: 0 auto;
@@ -723,7 +544,7 @@ section {
     }
 }
 
-.form {
+.contacto__form {
     display: grid;
     gap: .3rem;
     max-width: 769px;
@@ -756,19 +577,15 @@ section {
         padding: 1rem;
     }
 
-    .selector {
-        display: grid;
-        gap: 0.5rem;
-        align-items: center;
-
-        label {
-            margin-right: 0.5rem;
-        }
+    label {
+        font-family: 'Convergence', sans-serif;
     }
-}
 
-label {
-    font-family: 'Convergence', sans-serif;
+    input {
+        background-color: rgba(255, 252, 255, 0.5);
+        padding: .3rem;
+        border-radius: .3125rem;
+    }
 }
 
 input[type="text"],
@@ -779,22 +596,14 @@ button {
     padding: 0.5rem;
 }
 
+.selector {
+    display: grid;
+    gap: 0.5rem;
+    align-items: center;
 
-@media (min-width: 768px) {
-    form {
-        grid-template-columns: repeat(2, 1fr);
+    label {
+        margin-right: 0.5rem;
     }
-
-    .selector {
-        grid-column: 1 / -1;
-    }
-}
-
-
-#contacto input {
-    background-color: rgba(255, 252, 255, 0.5);
-    padding: .3rem;
-    border-radius: .3125rem;
 }
 
 span.required {
@@ -804,6 +613,11 @@ span.required {
     &::before {
         content: "*";
     }
+}
+
+.enviar {
+    display: flex;
+    justify-content: center;
 }
 
 button {
@@ -837,7 +651,6 @@ button {
     padding: .9375rem;
 }
 
-.col-s-3 i,
-p {
+.footer__text i, p {
     color: rgba(250, 249, 249, 0.68);
 }
