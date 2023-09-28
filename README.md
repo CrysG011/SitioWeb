@@ -1,7 +1,7 @@
 # Primer Sitio Web
 ## Descripción del Proyecto
 El proyecto "Primer Sitio Web" es un sitio web de carácter informativo real pero refiere a una Academia ficticia ,especializada en diseño y edición multimedia. 
-El sitio ha sido construido utilizando HTML y CSS (uso de metodología BEM), integración con Sass y unos scripts sencillos para agregar funcionalidades adicionales.
+El sitio ha sido construido utilizando HTML y CSS (uso de metodología BEM), integración con Sass y un script sencillo para agregar funcionalidades adicionales.
 Es importante mencionar que aún existen algunos errores que se deben abordar. Algunos de ellos son la maquetación, optimización de rendimiento e implementaciones de seguridad.
 
 [SitioWeb](https://crysg011.github.io/SitioWeb/) 
