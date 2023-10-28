@@ -46,7 +46,7 @@
     <section id="home" class="home">
         <div class="home__contain">
             <div class="home__img">
-                <img src="img/logos.jpg" title="Creado con BlueWillow" alt="logos">
+                <img src="./img/logos.jpg" title="Creado con BlueWillow" alt="logos">
             </div>
             <div class="home__intro">
                 <h2>Crea imagenes y animaciones</h2>
@@ -93,22 +93,20 @@
                     reconocimiento de voz.</li>
             </ul>
         </div>
-
-
     </section>
     <section id="imagen" class="imagen">
         <div class="imagen__header">
             <a href="#nav" class="nav__hamburguer">
-                <img src="img/menu.svg" class="nav__icon">
+                <img src="img/menu.svg" class="nav__icon" title="HOME" alt="Menu Icon">
             </a>
             <h2>Slider de imagenes creadas con AI</h2>
         </div>
         <div class="imagen__slider">
 
-            <img src="./img/IAraven.jpg" loading="lazy" alt="Raven">
-            <img src="./img/IAmagia.jpg" loading="lazy" alt="Portal">
-            <img src="./img/IAdragon.png" loading="lazy" alt="Dragon">
-            <img src="./img/IAcatdog.png" loading="lazy" alt="Realistic">
+            <img src="./img/IAraven.jpg" loading="lazy" alt="Raven" title="Superheroína Raven como  anime, realista y caricatura">
+            <img src="./img/IAmagia.jpg" loading="lazy" alt="Portal" title="Portal en bosque encantado">
+            <img src="./img/IAdragon.png" loading="lazy" alt="Dragon" title="Dragon Fenix en 3d">
+            <img src="./img/IAcatdog.png" loading="lazy" alt="Realistic" title="Foto realista de gato y perro">
 
         </div>
     </section>
@@ -117,7 +115,6 @@
             <a href="#nav" class="nav__hamburguer">
                 <img src="img/menu.svg" class="nav__icon" title="HOME">
             </a>
-            <button id="muteButton" onclick="toggleMute()">Mutar</button>
             <h1><strong>VIDEO PROJECTS</strong></h1>
         </div>
         <div class="video__wrapper">
@@ -125,7 +122,7 @@
             <div class="video__container">
                 <div class="video-subtitle"><i class="fa-solid fa-volume-high"></i>_Música de fondo_<i
                         class="fa-solid fa-music"></i></div>
-                <video id="videoElement" autoplay loop muted playsinline loading="lazy">
+                <video id="videoElement" controls poster="img/videoIA.png" loading="lazy">
                     <source src="video/aiTechno.mp4" type="video/mp4">
                 </video>
             </div>
@@ -212,10 +209,6 @@
         </div>
     </footer>
     <script>
-        function toggleMute() {
-            var video = document.getElementById("videoElement");
-            video.muted = !video.muted;
-        }
         function showAlert() {
             alert("¡GRACIAS por probar mi sitio!.\nRECUERDA que es Fiction.\nContinuará mejorando");
         }
