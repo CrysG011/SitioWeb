@@ -1,4 +1,5 @@
 # Primer Página Web
+![La IA en el ámbito multimedial](./img/AudioVision.png)
 ## Descripción del Proyecto
 Esta página es de carácter informativo, basada en datos reales, acerca de las ventajas que ofrece la IA para diseño y edición. Refiere a una Academia multimedial ficticia.
 El sitio ha sido construido utilizando HTML y CSS (uso de metodología BEM), integración con Sass y un script sencillo para agregar funcionalidades adicionales.
