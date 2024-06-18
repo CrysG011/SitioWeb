@@ -20,7 +20,4 @@ Presentación:
 
 - Formulario de contacto para solicitar más información sobre la sección de su interés.
 
-Contribuciones
-<p>Si estás interesado en contribuir al proyecto "Primer Sitio Web" con ideas, correcciones o nuevas funcionalidades, te invitamos a que envíes tus sugerencias a través de la red social: </p>
-
 [Linkedin](https://www.linkedin.com/in/crystina-g-cristina-gonzalez-9337b0233/)
